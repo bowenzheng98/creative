@@ -1,0 +1,7 @@
+.timeslot {
+    border-style: solid;
+    width: 8em;
+    height: 3em; 
+    margin: 0.2em;
+    cursor: pointer;
+}

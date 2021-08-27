@@ -1,4 +1,4 @@
-import TimeSlot from "./time_slot"
+import TimeSlot from "./timeslot"
 
 const CalendarDay = ({day}) => {
 
@@ -6,8 +6,8 @@ const CalendarDay = ({day}) => {
         "1200", "1300", "1400", "1500", "1600", "1700", "1800", "1900", "2000", "2100", "2200", "2300"]
 
     return (
-        <div style={{display: "inline-block", padding: "4em"}}>
-            <div>{day}</div>
+        <div style={{display: "inline-block", padding: "0.5em"}}>
+            <div style={{display:"inline-block"}}>{day}</div>
             <div>{timeSlots.map((time,i) => <TimeSlot time={time} key={i}></TimeSlot>)}</div>
         </div>
     )
